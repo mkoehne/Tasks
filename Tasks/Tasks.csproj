@@ -101,6 +101,9 @@
     <Reference Include="Realm.Sync">
       <HintPath>..\packages\Realm.3.2.1\lib\netstandard1.4\Realm.Sync.dll</HintPath>
     </Reference>
+    <Reference Include="Cirrious.FluentLayouts.Touch">
+      <HintPath>..\packages\Cirrious.FluentLayout.2.8.0\lib\Xamarin.iOS10\Cirrious.FluentLayouts.Touch.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -133,6 +136,9 @@
       <DependentUpon>DetailViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Task.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Checkmark.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Fody.3.0.3\build\Fody.targets" Condition="Exists('..\packages\Fody.3.0.3\build\Fody.targets')" />

@@ -10,27 +10,11 @@ using System.CodeDom.Compiler;
 
 namespace Tasks
 {
-    [Register ("DetailViewController")]
+    [Register("DetailViewController")]
     partial class DetailViewController
     {
-        [Outlet]
-        UIKit.UILabel createdAtLabel { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel detailDescriptionLabel { get; set; }
-
-        void ReleaseDesignerOutlets ()
+        void ReleaseDesignerOutlets()
         {
-            if (createdAtLabel != null) {
-                createdAtLabel.Dispose ();
-                createdAtLabel = null;
-            }
-
-            if (detailDescriptionLabel != null) {
-                detailDescriptionLabel.Dispose ();
-                detailDescriptionLabel = null;
-            }
         }
     }
 }
